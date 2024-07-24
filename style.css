@@ -5,6 +5,10 @@
   }
   
 
+.gridContainer {
+    display: flex;
+}
+
 .square {
     border: 1px solid black;
     padding: 1px;
