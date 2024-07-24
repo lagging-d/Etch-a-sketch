@@ -1,3 +1,11 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+  }
+  
+
 .square {
     border: 1px solid black;
+    padding: 1px;
 }
