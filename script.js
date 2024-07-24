@@ -1,2 +1,4 @@
+
+
 const gridSquare = document.createElement(`div`);
-gridSquare.classList.add(`grid`);
+gridSquare.classList.add(`square`);
