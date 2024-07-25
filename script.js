@@ -4,10 +4,12 @@ const gridSquare = document.createElement(`div`);
 gridSquare.classList.add(`square`);
 gridContainer.appendChild(gridSquare);
 
+
 for (let i = 1; i < 16; ++i) {
     let anotherSquare = gridSquare.cloneNode(false);
     gridContainer.appendChild(anotherSquare);
 }
+
 
 const square = document.querySelectorAll(`.square`);
 
@@ -21,7 +23,16 @@ squareArr.forEach( (elem) => {
 
 const btn = document.querySelector(`#btnnumber`);
 
+let number;
+
 btn.addEventListener(`click`, () => {
-    let number = prompt(`Enter a number (no more than 100)`);
+    number = prompt(`Enter a number (no more than 100)`);
+
+    if (number > 0 && number <= 100) {
+        for (let i = 1; i < number; ++i) {
+            let anotherSquare = gridSquare.cloneNode(false);
+            gridContainer.appendChild(anotherSquare);
+        }
+    }
 })
 
