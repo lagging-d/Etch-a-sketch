@@ -16,8 +16,9 @@ let squareArr = Array.from(square);
 squareArr.forEach( (elem) => {
     elem.addEventListener(`mouseenter`, () => {
         elem.setAttribute(`style`, `background-color: black;`);
-
-    
     })
 })
+
+const btn = document.querySelector(`#btnnumber`);
+
 
