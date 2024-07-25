@@ -32,7 +32,9 @@ btn.addEventListener(`click`, () => {
     removeSquares();
 
     if (number > 0 && number <= 100) {
-        
+        for (i = 1; i < number; ++i) {
+            
+        }
     }
 })
 
