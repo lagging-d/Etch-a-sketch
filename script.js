@@ -21,6 +21,6 @@ squareArr.forEach( (elem) => {
 
 const btn = document.querySelector(`#btnnumber`);
 
-function howmuch() {
-    let number = input(`Enter a number`);
-}
+btn.addEventListener(`click`, () => {
+    let number = prompt(`Enter a number`);
+})
