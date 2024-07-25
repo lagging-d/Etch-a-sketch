@@ -30,13 +30,13 @@ btn.addEventListener(`click`, () => {
     number = +prompt(`Enter a number (no more than 100)`);  
 
     removeSquares();
+    gridSquare.removeAttribute(`style`);
     gridContainer.appendChild(gridSquare);
 
     if (number > 0 && number <= 100) {
         for (i = 1; i < number; ++i) {
             let anotherSquare = gridSquare.cloneNode(false);
             gridContainer.appendChild(anotherSquare);
-
         }
     }
 })
