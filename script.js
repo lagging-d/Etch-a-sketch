@@ -34,6 +34,8 @@ btn.addEventListener(`click`, () => {
 
     if (number > 0 && number <= 100) {
         for (i = 1; i < number; ++i) {
+            let anotherSquare = gridSquare.cloneNode(false);
+            gridContainer.appendChild(anotherSquare);
 
         }
     }
