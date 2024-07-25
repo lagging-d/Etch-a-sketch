@@ -15,12 +15,14 @@ const square = document.querySelectorAll(`.square`);
 
 let squareArr = Array.from(square);
 
-squareArr.forEach( (elem) => {
+function blackOut() { squareArr.forEach( (elem) => {
     elem.addEventListener(`mouseenter`, () => {
         elem.setAttribute(`style`, `background-color: black;`);
     })
 })
+}
 
+blackOut();
 
 const btn = document.querySelector(`#btnnumber`);
 
@@ -38,6 +40,7 @@ btn.addEventListener(`click`, () => {
             let anotherSquare = gridSquare.cloneNode(false);
             gridContainer.appendChild(anotherSquare);
         }
+        blackOut();
     }
 })
 
