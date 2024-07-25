@@ -31,6 +31,9 @@ btn.addEventListener(`click`, () => {
 
     removeSquares();
 
+    if (number > 0 && number <= 100) {
+        
+    }
 })
 
 function removeSquares() {
