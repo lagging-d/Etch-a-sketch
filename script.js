@@ -22,5 +22,6 @@ squareArr.forEach( (elem) => {
 const btn = document.querySelector(`#btnnumber`);
 
 btn.addEventListener(`click`, () => {
-    let number = prompt(`Enter a number`);
+    let number = prompt(`Enter a number (no more than 100)`);
 })
+
