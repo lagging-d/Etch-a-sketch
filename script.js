@@ -27,17 +27,14 @@ const btn = document.querySelector(`#btnnumber`);
 let number;
 
 btn.addEventListener(`click`, () => {
-    number = +prompt(`Enter a number (no more than 100)`);
+    number = +prompt(`Enter a number (no more than 100)`);  
 
-    while (gridContainer.square) {
-        gridContainer.square.remove();
-    }        
+    removeSquares();
 
-    if (number > 0 && number <= 100) {
-
-        for (let i = 1; i < number; ++i) {
-            let anotherSquare = gridSquare.cloneNode(false);
-            gridContainer.appendChild(anotherSquare);
-        }
-    }
 })
+
+function removeSquares() {
+    squareArr.forEach(square => {
+        square.remove();
+    })
+}
