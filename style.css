@@ -3,10 +3,6 @@
 *::after {
     box-sizing: border-box;
   }
-  
-:root {
-    --width-max-content: max-content;
-}
 
 .gridContainer {
     display: flex;
