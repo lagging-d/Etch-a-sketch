@@ -11,11 +11,13 @@
 .gridContainer {
     display: flex;
     flex-wrap: wrap;
-    width: calc(max-content / 2);
+    width: max-content;
 }
 
 .square {
     border: 1px solid black;
-    padding: 1px;
+    padding: 1 px;
     flex-grow: 0;
+    width: 25%;
+    aspect-ratio: 1/1;
 }
