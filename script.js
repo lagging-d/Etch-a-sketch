@@ -12,7 +12,6 @@ for (let i = 1; i < 16; ++i) {
 
 
 const square = document.querySelectorAll(`.square`);
-
 let squareArr = Array.from(square);
 
 function blackOut() { squareArr.forEach( (elem) => {
@@ -25,7 +24,6 @@ function blackOut() { squareArr.forEach( (elem) => {
 blackOut();
 
 const btn = document.querySelector(`#btnnumber`);
-
 let number;
 
 btn.addEventListener(`click`, () => {
@@ -45,7 +43,7 @@ btn.addEventListener(`click`, () => {
 })
 
 function removeSquares() {
-    squareArr.forEach(square => {
+    squareArr.map(square => {
         square.remove();
     })
 }
