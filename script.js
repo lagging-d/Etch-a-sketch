@@ -14,7 +14,7 @@ for (let i = 1; i < 16; ++i) {
 const square = document.querySelectorAll(`.square`);
 let squareArr = Array.from(square);
 
-function blackOut() { squareArr.forEach( (elem) => {
+function blackOut() { squareArr.map( (elem) => {
     elem.addEventListener(`mouseenter`, () => {
         elem.setAttribute(`style`, `background-color: black;`);
     })
@@ -29,7 +29,10 @@ let number;
 btn.addEventListener(`click`, () => {
     number = +prompt(`Enter a number (no more than 100)`);  
 
-    removeSquares();
+    const removeArr = squareArr.map(square => {
+        square.remove();
+    })
+    console.log(removeArr);
     gridSquare.removeAttribute(`style`);
     gridContainer.appendChild(gridSquare);
 
@@ -42,8 +45,3 @@ btn.addEventListener(`click`, () => {
     }
 })
 
-function removeSquares() {
-    squareArr.map(square => {
-        square.remove();
-    })
-}
