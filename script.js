@@ -12,9 +12,8 @@ for (let i = 1; i < 16; ++i) {
 
 
 const squares = document.querySelectorAll(`.square`);
-let squareArr = Array.from(squares);
 
-function blackOut() { squareArr.map( (elem) => {
+function blackOut() { squares.forEach( (elem) => {
     elem.addEventListener(`mouseenter`, () => {
         elem.setAttribute(`style`, `background-color: black;`);
     })
@@ -41,8 +40,17 @@ btn.addEventListener(`click`, () => {
         for (i = 1; i < number; ++i) {
             let anotherSquare = gridSquare.cloneNode(false);
             gridContainer.appendChild(anotherSquare);
+        } 
+        
+        let newSquares = document.querySelectorAll(`.square`);
+        console.log(newSquares);
+        function newBlackOut() { newSquares.forEach( (elem) => {
+            elem.addEventListener(`mouseenter`, () => {
+                elem.setAttribute(`style`, `background-color: black;`);
+            })
+        })
         }
-        blackOut();
-    }
+        newBlackOut();
+    } else alert (`THE RANGE IS 1-100!`)
 })
 
