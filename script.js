@@ -29,7 +29,9 @@ let number;
 btn.addEventListener(`click`, () => {
     number = +prompt(`Enter a number (no more than 100)`);  
 
-    squares.forEach(square => {
+    let newSquares = document.querySelectorAll(`.square`);
+
+    newSquares.forEach(square => {
         gridContainer.removeChild(square);
     })
     gridSquare.removeAttribute(`style`);
