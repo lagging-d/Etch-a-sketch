@@ -13,5 +13,5 @@
 .square {
     border: 1px solid black;
     padding: 1px;
-    flex-grow: 0;
+    flex-grow: 1;
 }
