@@ -23,7 +23,7 @@ function blackOut() { squares.forEach( (elem) => {
 blackOut();
 
 const btn = document.querySelector(`#btnnumber`);
-let number;
+let number = 16;
 
 btn.addEventListener(`click`, () => {
     number = +prompt(`Enter a number (no more than 100)`);  
@@ -53,4 +53,6 @@ btn.addEventListener(`click`, () => {
         newBlackOut();
     } else alert (`THE RANGE IS 1-100!`)
 })
+
+gridSquare.setAttribute(`style`, `width: calc(Math.sqrt(${number})%)`);
 
