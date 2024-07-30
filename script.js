@@ -5,7 +5,7 @@ gridSquare.classList.add(`square`);
 gridContainer.appendChild(gridSquare);
 
 
-for (let i = 1; i < 32; ++i) {
+for (let i = 1; i < 32 * 32; ++i) {
     let anotherSquare = gridSquare.cloneNode(false);
     gridContainer.appendChild(anotherSquare);
 }
@@ -42,7 +42,7 @@ btn.addEventListener(`click`, () => {
     gridContainer.appendChild(gridSquare);
 
     if (number > 0 && number <= 100) {
-        for (i = 1; i < number * 2; ++i) {
+        for (i = 1; i < number * number; ++i) {
             let anotherSquare = gridSquare.cloneNode(false);
             gridContainer.appendChild(anotherSquare);
         } 
@@ -74,7 +74,7 @@ btn.addEventListener(`click`, () => {
 
 
 const childSquare = document.querySelectorAll(`.gridContainer .square`);
-const childSquareWidth = `${Math.sqrt(number)}%`;
+const childSquareWidth = `${100 / number}%`;
 const childSquareHeight = childSquareWidth;
 
 childSquare.forEach(square => {
