@@ -15,7 +15,7 @@ const squares = document.querySelectorAll(`.square`);
 
 function blackOut() { squares.forEach( (elem) => {
     elem.addEventListener(`mouseenter`, () => {
-        elem.setAttribute(`style`, `background-color: black;`);
+        elem.style.backgroundColor = `black`;
     })
 })
 }
@@ -46,7 +46,7 @@ btn.addEventListener(`click`, () => {
         console.log(newSquares);
         function newBlackOut() { newSquares.forEach( (elem) => {
             elem.addEventListener(`mouseenter`, () => {
-                elem.setAttribute(`style`, `background-color: black;`);
+                elem.style.backgroundColor = `black`;
             })
         })
         }
@@ -54,5 +54,14 @@ btn.addEventListener(`click`, () => {
     } else alert (`THE RANGE IS 1-100!`)
 })
 
-gridSquare.setAttribute(`style`, `width: calc(Math.sqrt(${number})%)`);
+// gridSquare.setAttribute(`style`, `width: calc(Math.sqrt(${number})%)`);
+
+
+const childSquare = document.querySelectorAll(`.gridContainer .square`);
+const childSquareWidth = 4;
+const childSquareHeight = childSquareWidth;
+
+childSquare.forEach(square => {
+    square.style.height = `${childSquareHeight}px`;
+})
 
