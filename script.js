@@ -55,14 +55,15 @@ btn.addEventListener(`click`, () => {
     } else alert (`THE RANGE IS 1-100!`)
 })
 
-// gridSquare.setAttribute(`style`, `width: calc(Math.sqrt(${number})%)`);
+// childSquareWidth.style.width = `calc(Math.sqrt(${number})%)`;
 
 
 const childSquare = document.querySelectorAll(`.gridContainer .square`);
-const childSquareWidth = 4;
+const childSquareWidth = `${Math.sqrt(number)}%`;
 const childSquareHeight = childSquareWidth;
 
 childSquare.forEach(square => {
-    square.style.height = `${childSquareHeight}px`;
+    square.style.width = childSquareWidth;
+    square.style.height = childSquareHeight
 })
 
