@@ -15,7 +15,12 @@ const squares = document.querySelectorAll(`.square`);
 
 function blackOut() { squares.forEach( (elem) => {
     elem.addEventListener(`mouseenter`, () => {
-        elem.style.backgroundColor = `black`;
+        let randomNum1 = Math.floor(Math.random() * 255);
+        let randomNum2 = Math.floor(Math.random() * 255);
+        let randomNum3 = Math.floor(Math.random() * 255);
+        elem.style.backgroundColor = `rgb(${randomNum3} 
+                                    ${randomNum2}  
+                                    ${randomNum1})`;
     })
 })
 }
@@ -46,7 +51,12 @@ btn.addEventListener(`click`, () => {
         console.log(newSquares);
         function newBlackOut() { newSquares.forEach( (elem) => {
             elem.addEventListener(`mouseenter`, () => {
-                elem.style.backgroundColor = `black`;
+                let randomNum1 = Math.floor(Math.random() * 255);
+                let randomNum2 = Math.floor(Math.random() * 255);
+                let randomNum3 = Math.floor(Math.random() * 255);
+                elem.style.backgroundColor = `rgb(${randomNum3} 
+                                            ${randomNum2}  
+                                            ${randomNum1})`;
             })
         })
         }
@@ -71,4 +81,5 @@ childSquare.forEach(square => {
     square.style.width = childSquareWidth;
     square.style.height = childSquareHeight
 })
+
 
