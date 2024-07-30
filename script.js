@@ -52,6 +52,11 @@ btn.addEventListener(`click`, () => {
         }
         newBlackOut();
 
+        newSquares.forEach(square => {
+            square.style.width = childSquareWidth;
+            square.style.height = childSquareHeight 
+        })
+
     } else alert (`THE RANGE IS 1-100!`)
 })
 
