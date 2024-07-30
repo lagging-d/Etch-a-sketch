@@ -37,7 +37,7 @@ btn.addEventListener(`click`, () => {
     gridContainer.appendChild(gridSquare);
 
     if (number > 0 && number <= 100) {
-        for (i = 1; i < number; ++i) {
+        for (i = 1; i < number * 2; ++i) {
             let anotherSquare = gridSquare.cloneNode(false);
             gridContainer.appendChild(anotherSquare);
         } 
@@ -51,6 +51,7 @@ btn.addEventListener(`click`, () => {
         })
         }
         newBlackOut();
+
     } else alert (`THE RANGE IS 1-100!`)
 })
 
