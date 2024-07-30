@@ -5,7 +5,7 @@ gridSquare.classList.add(`square`);
 gridContainer.appendChild(gridSquare);
 
 
-for (let i = 1; i < 16; ++i) {
+for (let i = 1; i < 32; ++i) {
     let anotherSquare = gridSquare.cloneNode(false);
     gridContainer.appendChild(anotherSquare);
 }
