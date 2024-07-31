@@ -62,8 +62,8 @@ btn.addEventListener(`click`, () => {
         newBlackOut();
 
         newSquares.forEach(square => {
-            square.style.width = `${Math.floor(800 / number)}px`;
-            square.style.height = `${Math.floor(800 / number)}px`;
+            square.style.width = `${Math.floor(790 / number)}px`;
+            square.style.height = `${Math.floor(790 / number)}px`;
         })
 
     } else alert (`THE RANGE IS 1-100!`)
@@ -73,7 +73,7 @@ btn.addEventListener(`click`, () => {
 
 
 const childSquare = document.querySelectorAll(`.gridContainer .square`);
-const childSquareWidth = `${Math.floor(800 / number)}px`;
+const childSquareWidth = `${Math.floor(790 / number)}px`;
 const childSquareHeight = childSquareWidth;
 
 childSquare.forEach(square => {
@@ -81,4 +81,4 @@ childSquare.forEach(square => {
     square.style.height = childSquareHeight
 })
 
-const canvasWrapper = document.querySelector(`#canvasWrapper`);
+// const canvasWrapper = document.querySelector(`#canvasWrapper`);
