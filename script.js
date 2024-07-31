@@ -74,7 +74,7 @@ btn.addEventListener(`click`, () => {
 
 
 const childSquare = document.querySelectorAll(`.gridContainer .square`);
-const childSquareWidth = `${200 / number}%`;
+const childSquareWidth = `${Math.floor(200 / number)}px`;
 const childSquareHeight = childSquareWidth;
 
 childSquare.forEach(square => {
