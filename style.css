@@ -9,11 +9,8 @@
     flex-wrap: wrap;
     height: 800px;
     width: 800px;
+    border: 5px solid black;
 }
 
-#canvasWrapper {
-    border: 5px solid black;
-    display: flex;
-    max-width: max-content;
-}
+
 
