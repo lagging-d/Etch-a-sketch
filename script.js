@@ -48,7 +48,6 @@ btn.addEventListener(`click`, () => {
         } 
         
         let newSquares = document.querySelectorAll(`.square`);
-        console.log(newSquares);
         function newBlackOut() { newSquares.forEach( (elem) => {
             elem.addEventListener(`mouseenter`, () => {
                 let randomNum1 = Math.floor(Math.random() * 255);
