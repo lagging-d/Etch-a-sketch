@@ -28,7 +28,7 @@ function blackOut() { squares.forEach( (elem) => {
 blackOut();
 
 const btn = document.querySelector(`#btnnumber`);
-let number = 32;
+let number = 16;
 
 btn.addEventListener(`click`, () => {
     number = +prompt(`Enter a number (no more than 100)`);  
