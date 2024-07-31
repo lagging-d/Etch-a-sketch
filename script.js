@@ -81,4 +81,4 @@ childSquare.forEach(square => {
     square.style.height = childSquareHeight
 })
 
-
+const canvasWrapper = document.querySelector(`#canvasWrapper`);
