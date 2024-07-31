@@ -63,8 +63,8 @@ btn.addEventListener(`click`, () => {
         newBlackOut();
 
         newSquares.forEach(square => {
-            square.style.width = childSquareWidth;
-            square.style.height = childSquareHeight 
+            square.style.width = `${Math.floor(200 / number)}px`;
+            square.style.height = `${Math.floor(200 / number)}px`;
         })
 
     } else alert (`THE RANGE IS 1-100!`)
